@@ -1,0 +1,21 @@
+<div class="mt-1 mb-1">
+  <input class="form-control" #todoText />
+  <button class="btn btn-primary mt-2" (click)="addItem(todoText.value)">Добавить</button>
+</div>
+<br>
+<table class="table table-striped table-bordered">
+  <thead>
+  <tr><th>Номер</th><th>Описание</th><th>Завершено</th><th>Выполнить</th></tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of getTodoItems(); let i = index">
+    <td>{{ i + 1 }}</td>
+    <td>{{ item.action }}</td>
+    <td [ngSwitch]="item.done">
+      <span *ngSwitchCase="true">Да</span>
+      <span *ngSwitchDefault>Нет</span>
+    </td>
+    <td><input type="checkbox" [(ngModel)]="item.done" /></td>
+  </tr>
+  </tbody>
+</table>

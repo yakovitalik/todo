@@ -1,6 +1,31 @@
+# Список дел
+
+***
+<img src="tododemo.gif">
+***
+
+Данное приложение представляет собой простой список дел. 
+Для демонстрации уже добавлены некоторые записи. 
+Нажатием на чекбокс в колонке "Выполнить" задание завершается и запись исчезает из списка. 
+Введя в форму новую запись и нажав кнопку добавить, оно появляется в списке. 
+
+Построено на Angular 16.1.3 через инструмент Angular-CLI.
+Для запуска необходимо, чтобы в вашей системе был установлен Node.js. 
+
+Для того, чтобы открыть приложение, необходимо ввести в командной строке `ng serve --open`. 
+Приложение откроется на стандартном порту по адресу: `http://localhost:4200/`.
+
 # Todo
 
+This application is a simple to-do list.
+Some entries have already been added for adventures.
+By clicking on the checkbox in the "Run" column, the task is completed and the entry disappears from the list.
+Introducing the new entry and determining where it appears in the list.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+
+In order to open the application, you need to enter `ng serve --open` at the command line.
+The application will open on the standard port at `http://localhost:4200/`.
 
 ## Development server
 
